@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title>Memory Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="memory.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta charset="UTF-8">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      	<div class="container">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+          		</button>
+          		<a class="navbar-brand" href="#">Demos style/js</a>
+        	</div>
+        	<div id="navbar" class="collapse navbar-collapse">
+          		<ul class="nav navbar-nav">
+            		<li><a href="../index.html">Styles</a></li>
+            		<li class="active"><a href="./index.html">Memory Game</a></li>
+          		</ul>
+        	</div><!--/.nav-collapse -->
+      	</div>
+    </nav>
+
+    <div class="container">
+		<div id="main-content">
+			<div id="score-result">
+				<p>
+					<span>Nombre de vies :</span>	
+					<span id="lifes"></span>
+				</p>
+				<p>
+					<span>Paires trouvées :</span>	
+					<span id="pair-found"></span>
+				</p>
+				<p id="result"></p>
+				<p><button id="new-game">Nouvelle partie</button></p>
+			</div>
+			<div id="game-board">
+				<table>
+					<tr>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>	
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>	
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>	
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>	
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+						<td>
+							<img src="img/card-back.jpg" />
+						</td>
+					</tr>		
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

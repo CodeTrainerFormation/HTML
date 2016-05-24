@@ -1,0 +1,147 @@
+body {
+	padding: 60px 0;
+}
+
+/*************OVERFLOWS**************/
+#overflows > div{
+	max-width: 150px;
+	max-height: 150px;
+	margin-right: 10px;
+	background-color: rgba(0,0,255,0.2);
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+}
+
+#overflow {
+	overflow: scroll;
+}
+
+#overflow p {
+	width: 250px;
+}
+
+#overflowx {
+	overflow-x: scroll;
+}
+
+#overflowx p {
+	width: 600px;
+}
+
+#overflowy {
+	overflow-y: scroll;
+}
+/**********ENDOVERFLOWS************/
+
+/**********FLOAT 1****************/
+#floats-one {
+	background-color: yellow;
+	overflow: auto;
+}
+
+#floats-one > div {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#floats-one #blue {
+	background-color: blue;
+}
+
+#floats-one #red {
+	background-color: red;
+}
+/**********ENDFLOAT 1**************/
+
+/************FLOAT 2**************/
+#floats-two {
+	background-color: orange;
+}
+
+#floats-two > div.color {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#floats-two #purple {
+	background-color: purple;
+}
+
+#floats-two #green {
+	background-color: green;
+}
+
+#floats-two .clear {
+	clear: both;
+}
+/**********ENDFLOAT 2*************/
+
+/**********POSITION*************/
+#rel {
+	position: relative;
+	background-color: brown;
+	height: 200px;
+}
+
+#abs {
+	position: absolute;
+	height: 50px;
+	background-color: cyan;
+	top: 10px;
+	left: 150px;
+}
+/**********ENDPOSITION*************/
+
+/*************VISIBILITY*************/
+#visibility {
+	background-color: LightPink;
+}
+
+#visibility-child {
+	width: 200px;
+	height: 200px;
+	background-color: SkyBlue;
+	visibility: hidden;
+}
+/**********ENDVISIBILITY*************/
+
+/*************DISPLAY*************/
+#display {
+	background-color: SkyBlue;
+}
+
+#display-child {
+	width: 200px;
+	height: 200px;
+	background-color: LightPink;
+	display: none;
+}
+/**********ENDDISPLAY*************/
+
+/***********INLINEBLOCK***********/
+#iBlock {
+	background-color: SteelBlue;
+
+	/*Si vous commentez la ligne ci dessous, vous verrez apparaitre 
+	une petite marge en bas des div inline-block
+	Cette propriété permet de régler le problème*/
+	font-size: 0;
+}
+
+#iBlock > div {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+#iBlock > div:first-child {
+	background-color: SpringGreen;
+}
+
+#iBlock > div:last-child {
+	background-color: YellowGreen;
+}
+/*********ENDINLINEBLOCK**********/

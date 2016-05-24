@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Démos</title>
+    <meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      	<div class="container">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+          		</button>
+          		<a class="navbar-brand" href="#">Demos style/js</a>
+        	</div>
+        	<div id="navbar" class="collapse navbar-collapse">
+          		<ul class="nav navbar-nav">
+            		<li class="active"><a href="#">Style</a></li>
+            		<li><a href="./memory_game/index.html">Memory Game</a></li>
+          		</ul>
+        	</div><!--/.nav-collapse -->
+      	</div>
+    </nav>
+
+    <div class="container">
+
+        <h2>Overflows</h2>
+        <div id="overflows">
+            <div id="overflow">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsam possimus, ipsa vitae minima suscipit, repellat ab officiis laboriosam atque illum, accusantium saepe, distinctio exercitationem nulla quos qui asperiores nemo.</p>
+            </div>
+            <div id="overflowx">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non asperiores atque eaque enim tempore molestiae modi totam sunt suscipit dolor. Dolorum pariatur illum non blanditiis dolor eaque inventore quae voluptatibus?</p>    
+            </div>
+            <div id="overflowy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis similique ea est cum adipisci quidem ipsum aperiam, dolorum repellat sapiente. Nesciunt consequatur doloremque magnam tenetur inventore molestias maiores, hic nam.</p>
+            </div>
+        </div>
+
+        <h2>Float 1</h2>
+        <p>Garder la taille du parent avec la propriété css <b>overflow: auto;</b></p>
+        <div id="floats-one">
+            <div id="red">
+                
+            </div>
+            <div id="blue">
+                
+            </div>
+        </div>
+
+        <h2>Float 2</h2>
+        <p>Garder la taille du parent avec la propriété css <b>clear: both;</b></p>
+        <div id="floats-two">
+            <div class="color" id="purple">
+                
+            </div>
+            <div class="color" id="green">
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <h2>Positions</h2>
+        <p></p>
+        <div id="rel">
+            RELATIVE
+            <div id="abs">
+                ABSOLUTE
+            </div>
+        </div>
+
+        <h2>Visibilty</h2>
+        <p>L'attribut <b>visibility: hidden</b> garde la taille qu'il aurait du prendre</p>
+        <div id="visibility">
+           <div id="visibility-child">
+                
+            </div>
+            <button id="btn-visible">Visible/Hide div</button>
+        </div>
+
+        <p>L'attribut <b>display: none</b> ne garde pas la place (utiliser l'inspecteur d'élément pour voir la div)</p>
+      	<div id="display">
+           <div id="display-child">
+                
+            </div>
+            <button id="btn-display">Display/Hide div</button>
+        </div>
+
+        <h2>Inline-block</h2>
+        <div id="iBlock">
+            <div>
+                
+            </div><!-- Hack pour corriger le petit espace blanc
+            --><div>
+                
+            </div>
+        </div>
+    </div><!-- /.container -->
+</body>
+</html>

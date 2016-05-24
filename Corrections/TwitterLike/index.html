@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Twitter</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- top bar -->
+		<header>
+			<div id="full-header">
+				<div>
+					<nav>
+						<ul>
+							<li><img src="" alt="" title="" /><span><a href="contact.html" target="window">Home</a></span></li>
+							<li><img src="" alt="" title="" /><span><a href="">Notifications</a></span></li>
+							<li><img src="" alt="" title="" /><span><a href="">Messages</a></span></li>
+						</ul>
+					</nav>
+				</div>
+				<div>
+					<img src="" alt="" title="">
+				</div>
+				<div id="search-bar">
+					<input type="text" name="search" placeholder="Search Twitter" />
+					<img src="https://pbs.twimg.com/profile_images/616542458579714048/TE9cMWKl_normal.jpg" alt="settings" title="settings" />
+					<button class="tweet-btn" ><img src="" alt="" title="" /><span>Tweet</span></button>
+				</div>
+			</div>
+		</header>
+		<div id="main-content">
+			<!-- section d'informations de l'utilisateur -->
+			<div id="all-aside">
+				<aside id="user-informations">
+					<div id="cover-pic">
+					</div>
+					<div id="basic-infos">
+						<!-- Photo de profil -->
+						<div class="u-infos">
+							<img id="user-pic" src="https://pbs.twimg.com/profile_images/616542458579714048/TE9cMWKl_bigger.jpg" alt="me" title="@Test" />
+						</div>
+						<div class="u-infos">
+							<p id="uc-name">Alexis VERNOT</p>
+							<p id="uc-pseudo">@Test</p>
+						</div>
+					</div>
+					<div id="user-connected">
+						<div>
+							<table>
+								<tr>
+									<th>tweets</th>
+									<th>following</th>
+									<th>followers</th>
+								</tr>
+								<tr>
+									<td>5000</td>
+									<td>249</td>
+									<td>123456</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</aside>
+
+				<!-- section des trendings topics -->
+				<aside id="trending-topic">
+					<div>
+						<div>
+							<span class="header-tt">France Trends</span>
+							<span class="header-tt"> - </span>
+							<span id="change-tt"><a href="">Change</a></span>
+						</div>
+						<div>
+							<ul id="trending-list">
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+								<li><a href="">#Hashtag</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+			</div>
+
+			<!-- section de la timeline -->
+			<div id="all-tweets">
+				<!-- section pour ecrire un tweet -->
+				<div id="write-tweet">
+					<div>
+						<img src="https://pbs.twimg.com/profile_images/616542458579714048/TE9cMWKl_normal.jpg" title="" alt="me" />
+					</div>
+					<div id="box-write-tweet">
+						<textarea id="ta-new-tweet" placeholder="What's happening?"></textarea>
+					</div>	
+					<div id="container-btn-tweet">
+						<button class="tweet-btn" id="btn-add-tweet">Tweeter</button>
+					</div>
+				</div>
+				<!-- timeline -->
+				<div id="timeline">
+					<!-- un tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/560125310616608768/Q3wGPVgr_bigger.png" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p class="real-content">
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button >Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+					<!-- 2e tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/669486804094099456/bSnMc8XM_bigger.png" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p>
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button>Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+					<!-- 3e tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/671366768196247553/p9BwdSaH_bigger.jpg" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p>
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button>Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+					<!-- 4e tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/668717196529545217/5Lv_tAdv_bigger.png" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p>
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button>Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+					<!-- 5e tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/700637295687274497/086RjiFk_bigger.png" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p>
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button>Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+					<!-- 6e tweet -->
+					<div class="full-tweet">
+						<div class="tweet-img-container">
+							<!-- photo de profil du tweetos -->
+							<img src="https://pbs.twimg.com/profile_images/560125310616608768/Q3wGPVgr_bigger.png" title="" alt="allocine" />
+						</div>
+						<div class="tweet-content">
+							<!-- Contenu du tweet -->
+							<div>
+								<p class="tweetos-infos">
+									<span class="tweetos-name">Nom du tweetos</span>
+									<span>@pseudotweetos</span>
+									<span> - </span>
+									<span>2m</span>
+								</p>
+								<p>
+									Contenu du tweet ici, avec un image en option !
+								</p>
+							</div>
+							<!-- Bouton de partage -->
+							<div class="action-buttons">
+								<button>Reply</button>
+								<button>Retweet</button>
+								<button>Like</button>
+								<button>More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>

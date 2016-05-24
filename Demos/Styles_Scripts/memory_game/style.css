@@ -1,0 +1,85 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #f4f4f4;
+	padding-top: 60px;
+}
+
+div#main-content {
+	margin: auto;
+	width: 1000px;
+	margin-top: 50px;
+}
+
+div#main-content > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div#main-content div#score-result {
+	background-color: rgba(179, 156, 156, 0.5); 
+	width: 300px;
+	height: 150px;
+	margin-top: 10px;
+}
+
+div#main-content div#game-board table {
+	border-spacing: 10px;
+}
+
+div#main-content div#game-board tr {
+	margin: 10px;
+}
+
+div#main-content div#game-board td {
+	width: 150px;
+	height: 210px;
+	background-color: rgba(179, 156, 156, 0.1);
+}
+
+div#main-content div#game-board td img {
+	max-width: 150px;
+}
+
+div#score-result {
+	border-radius: 10px;
+}
+
+div#score-result p{
+	margin: 10px;
+	font-weight: bold;
+}
+
+button#new-game {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+button#new-game:hover{
+	color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
